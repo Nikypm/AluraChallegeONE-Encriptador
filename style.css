@@ -1,0 +1,200 @@
+@import url('https://fonts.cdnfonts.com/css/poppins');
+
+* {
+  margin: 0;
+  font-family: 'Poppins', sans serif;
+}
+
+#logo h2 {
+  font-size: 34px;
+  font-weight: bold;
+}
+
+header {
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.4);
+}
+
+@media (max-width: 768px) {
+  #logo h2 {
+    font-size: 28px;
+  }
+}
+
+
+#Top {
+  margin-top: 10px;
+
+}
+
+.col-md-auto {
+  margin: 10px;
+  text-align: center;
+}
+
+.msg {
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  height: 90%;
+  box-shadow: 0px 24px 32px -15px rgba(0, 0, 0, 0.411);
+  border-radius: 12px;
+  border: 2px solid rgb(36, 36, 126); 
+  
+}
+
+.img-m {
+  max-width: 90% !important;
+  height: auto;
+  margin: 0 auto;
+}
+
+#mensaje-resultado, #mensaje{
+  width: 100%;
+  height: 90%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding-right: 2.5rem;
+  
+  white-space: initial;
+  resize:none;
+}
+
+#mensaje-resultado{
+  display: none;
+}
+
+.btn-copiar {
+  background-color: transparent;
+  font-size: 24px;
+  color: #333;
+  border: none;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+
+.btn-copiar:hover {
+  color: #0069d9;
+}
+
+
+#boton-copiar {
+  position: absolute;
+  top: 10%;
+  right: 1rem;
+  transform: translateY(-50%);
+  display: none;
+}
+
+#encriptar, #desencriptar{
+  border: 2px solid #0A3871; 
+  background-color: #0A3871;
+}
+
+#encriptar:hover, #desencriptar:hover{
+  background-color: #fff;
+  border: 2px solid #0A3871; 
+  color: #0A3871;
+}
+
+@media (min-width: 768px) {
+  #izquierda, #derecha {
+    flex-basis: 50%;
+    max-width: 50%;
+    height: 470px;
+  }
+}
+
+@media (max-width: 760px) {
+  
+  .msg h3 {
+    font-size: 22px !important; 
+    padding-top: 10px;
+  }
+  #mensaje-resultado, #mensaje {
+    height: 200px;
+    white-space: initial;
+    resize:none;
+  }
+  #boton-copiar{
+    top: 20%;
+  }
+  .img-m {
+    max-width: 50% !important;
+    padding-bottom: 20px;
+  }
+}
+
+footer {
+  background-color: #0A3871;
+  padding: 0px 10px 0px 10px;
+  color: #f0efef;
+  border-top: 1px solid #f0efef;
+  height: auto;
+}
+footer .container .row .col-md-6{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+#correo {
+  color: #f0efef;
+  cursor: pointer;
+  display: flex;
+}
+.contenedor {
+  display: flex;
+}
+
+.social-icons a {
+  display: inline-block;
+  margin-right: 10px;
+  
+  color: #f0efef;
+  border: 1px solid #f0efef;
+  border-radius: 50%;
+  transition: all 0.3s ease-in-out;
+  font-size: 24px;
+}
+.social-icons a i{
+  border-radius: 50%;
+  padding: 6px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 0px;
+  font-size: 24px;
+}
+
+.social-icons a:hover {
+  background-color: #f0efef;
+  color: #171717;
+  transform: translateY(-5px);
+}
+
+@media (max-width: 780px) {
+  footer h4 {
+    font-size: 1rem;
+  }
+  
+  footer p {
+    font-size: 0.8rem;
+  }
+  
+  .social-icons a {
+    font-size: 25px;
+    padding: 0px;
+  }
+}
+
