@@ -8,9 +8,9 @@ window.onload = function () {
 
     encriptarBtn.addEventListener('click', function () {
         let texto = mensajeTextarea.value.trim();
-        if (/[áéíóúÁÉÍÓÚ^$.*+?=!:|\\/()\[\]{}]/g.test(texto)) {
+        if (/[áéíóúÁÉÍÓÚ^$.*+?=!:|\\/()\[\]{}A-Z]/g.test(texto)) {
             var alertBox = document.getElementById("alertBox");
-            alertBox.innerHTML = '<div class="alert alert-warning mb-2" role="alert">El mensaje no debe contener letras con acentos ni caracteres especiales.</div>';
+            alertBox.innerHTML = '<div class="alert alert-warning mb-2" role="alert">El mensaje no debe contener letras con acentos ni caracteres especiales ni mayúsculas.</div>';
             alertBox.style.display = "block";
 
             setTimeout(function () {
@@ -37,9 +37,9 @@ window.onload = function () {
     desencriptarBtn.addEventListener('click', function () {
         let textoEncriptado = mensajeTextarea.value.trim();
 
-        if (/[áéíóúÁÉÍÓÚ^$.*+?=!:|\\/()\[\]{}]/g.test(textoEncriptado)) {
+        if (/[áéíóúÁÉÍÓÚ^$.*+?=!:|\\/()\[\]{}A-Z]/g.test(textoEncriptado)) {
             var alertBox = document.getElementById("alertBox");
-            alertBox.innerHTML = '<div class="alert alert-warning mb-2" role="alert">El mensaje no debe contener letras con acentos ni caracteres especiales.</div>';
+            alertBox.innerHTML = '<div class="alert alert-warning mb-2" role="alert">El mensaje no debe contener letras con acentos ni caracteres especiales ni mayúsculas.</div>';
             alertBox.style.display = "block";
 
             setTimeout(function () {
